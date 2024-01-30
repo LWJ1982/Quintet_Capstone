@@ -9,6 +9,15 @@ resource "aws_s3_bucket" "quintet" {
 }
 
 
+# snky alert to enable S3 bucket version
+resource "aws_s3_bucket_versioning" "s3-versioning" {
+  bucket = aws_s3_bucket.quintet.id
+  versioning_configuration {
+    status = "Enabled"
+  }
+
+
+
 
 # resource "aws_s3_object" "object" {
 #   bucket = aws_s3_bucket.quintet.bucket
