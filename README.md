@@ -13,9 +13,9 @@
 
 ### From RRAC to produce
 
-a) Conceptual Design (ideation)
-b) Logical Design (blueprint with functional blocks, eg. DNS,compute, storage)
-c) Physical Design: representation of actual to build (e.g. actual EC2, IP)
+1. Conceptual Design (ideation)
+2. Logical Design (blueprint with functional blocks, eg. DNS,compute, storage)
+3. Physical Design: representation of actual to build (e.g. actual EC2, IP)
 
 ### Common Dictionary
 
