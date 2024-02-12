@@ -1,3 +1,4 @@
+# Adding Backend as S3 for remote state storage
 terraform{
     backend "s3" {
       bucket = "sctp-ce4-tfstate-bucket"
