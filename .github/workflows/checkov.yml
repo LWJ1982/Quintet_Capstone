@@ -1,3 +1,4 @@
+## Code Contributed by Rudyn
 name: Checkov
 run-name: ${{ github.actor }} is running Checkov on the ${{ github.ref }} branch for ${{ github.repository }} repository.
 

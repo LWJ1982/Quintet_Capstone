@@ -1,3 +1,4 @@
+## Code Contributed by Rudyn
 name: Snyk CICD
 run-name: ${{ github.actor }} is running Snyk on ${{ github.repository }} repository.
 
