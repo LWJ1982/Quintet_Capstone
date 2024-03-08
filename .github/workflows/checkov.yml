@@ -1,0 +1,25 @@
+## Code Contributed by Rudyn
+name: Checkov Analysis
+run-name: ${{ github.actor }} is running Checkov on the ${{ github.ref }} branch for ${{ github.repository }} repository.
+
+on:
+  pull_request:
+    branches: [ main, "*"]
+
+jobs:
+  Checkov:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: modules
+        
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Checkov
+      uses: bridgecrewio/checkov-action@master
+      with:
+        framework: terraform
+    
