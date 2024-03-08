@@ -1,4 +1,5 @@
-name: Snyk CICD
+## Code Contributed by Rudyn
+name: Snyk Scan
 run-name: ${{ github.actor }} is running Snyk on ${{ github.repository }} repository.
 
 on:
@@ -9,7 +10,7 @@ jobs:
   security:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Run Snyk to check Terraform files for issues
         uses: snyk/actions/iac@master
         env:
